@@ -107,7 +107,7 @@ function App() {
   };
 
   // State to store generated passwords
-  const [passwords, setPasswords] = useState(Array.from({ length: 5 }, (_, index) => generatePassword()));
+  const [passwords, setPasswords] = useState(Array.from({ length: 10 }, (_, index) => generatePassword()));
 
   // Function to handle button click and generate new passwords
   const handleGeneratePasswords = () => {
@@ -125,7 +125,7 @@ function App() {
       </div>
 
       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-4" 
-      onClick={handleGeneratePasswords}>Generate</button>
+      onClick={handleGeneratePasswords}>Generate more</button>
     </div>
   );
 }
